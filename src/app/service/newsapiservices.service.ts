@@ -12,8 +12,8 @@ export class NewsapiservicesService {
   //newapiurl
   newsApiUrl = "https://newsapi.org/v2/top-headlines?country=us&apiKey=cb68ef0caae2441eb7627f5c13881173";
   tecnologiaApiUrl = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=cb68ef0caae2441eb7627f5c13881173";  
-  politicaApiUrl = "http://jellyfish-app-24xy9.ondigitalocean.app/api/noticias?populate=fotoPrincipal";    
-  noticiaApiUrl = "http://jellyfish-app-24xy9.ondigitalocean.app/api/noticias?filters[slug][$eq]=";    
+  politicaApiUrl = "https://jellyfish-app-24xy9.ondigitalocean.app/api/noticias?populate=fotoPrincipal";    
+  noticiaApiUrl = "https://jellyfish-app-24xy9.ondigitalocean.app/api/noticias?filters[slug][$eq]=";    
 
 
   topHeading():Observable<any>{

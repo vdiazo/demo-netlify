@@ -13,6 +13,9 @@ import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { PoliticaComponent } from './politica/politica.component';
 import { NoticiasComponent } from './noticias/noticias.component';
 import { MarkdownModule } from 'ngx-markdown';
+import { EconomiaComponent } from './economia/economia.component';
+import { UltimasComponent } from './ultimas/ultimas.component';
+import { DeporteComponent } from './deporte/deporte.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { MarkdownModule } from 'ngx-markdown';
     TopheadingComponent,
     TecnologiaComponent,
     PoliticaComponent,
-    NoticiasComponent
+    NoticiasComponent,
+    EconomiaComponent,
+    UltimasComponent,
+    DeporteComponent
   ],
   imports: [
     BrowserModule,

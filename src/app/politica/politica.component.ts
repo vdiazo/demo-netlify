@@ -16,7 +16,9 @@ export class PoliticaComponent implements OnInit {
   ngOnInit(): void {
     this._services.politicaNoticias().subscribe((result)=>{
       console.log(result);
-      this.politicaDisplay = result.data;
+      
+      this.politicaDisplay = result.data.filter((el: any)=>el.attributes.seccion.data.attributes.nombre == "Política");
+      //this.politicaDisplay = result.data;
       
 
     })

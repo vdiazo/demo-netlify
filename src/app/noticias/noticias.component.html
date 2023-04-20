@@ -5,9 +5,10 @@
             <!-- //////////////////////////////  TITULO  /////////////////////////// -->
             {{ noticiaDisplay.titulo }}
         </h3>
-        <img src="https://jellyfish-app-24xy9.ondigitalocean.app{{noticiaDisplay.fotoPrincipal.data[0].attributes.formats.medium.url}}" width="100%">
+        <img src="https://jellyfish-app-24xy9.ondigitalocean.app{{noticiaDisplay.fotoPrincipal.data[0].attributes.formats.small.url}}" width="100%">
         
         <p>{{ noticiaDisplay.fotoPrincipal.data[0].attributes.caption}}</p>
+        <p><span style="color:brown">10:19 </span> | {{ noticiaDisplay.fecha }}</p>
         
         <markdown ngPreserveWhitespaces>
             {{ noticiaDisplay.primerParrafo }}   

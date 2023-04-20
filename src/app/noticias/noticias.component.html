@@ -1,0 +1,37 @@
+ <div class="container" *ngIf="noticiaDisplay.titulo !== undefined">
+    
+    <div class="row col-6 mx-auto mt-5" >
+        <h3 class="">
+            <!-- //////////////////////////////  TITULO  /////////////////////////// -->
+            {{ noticiaDisplay.titulo }}
+        </h3>
+        <img src="http://jellyfish-app-24xy9.ondigitalocean.app{{noticiaDisplay.fotoPrincipal.data[0].attributes.formats.medium.url}}" width="100%">
+        
+        <p>{{ noticiaDisplay.fotoPrincipal.data[0].attributes.caption}}</p>
+        
+        <markdown ngPreserveWhitespaces>
+            {{ noticiaDisplay.primerParrafo }}   
+        </markdown>
+ 
+        <!-- static markdown -->
+        <markdown ngPreserveWhitespaces>
+            {{ noticiaDisplay.contenido }}   
+        </markdown>
+    </div>
+
+    <div class="row col-6 mx-auto mt-1">
+        <!-- <p>Noticias Relacionadas</p> -->
+        <!-- <div class="row">
+            <div *ngFor="let d of topheadingDisplay" class="col-lg-3 mt-3 mb-3">
+    
+                <div class="box">
+                    <img src="{{d.urlToImage}}" width="100%">
+                    <h5 class="mt-2 mb-2">{{ d.title }}</h5>
+                    <a href="{{d.url}}" target="_blank" class="btn btn-dark btn-sm mt-2">Leer más</a>   
+    
+                </div>
+            </div>
+        </div>          -->
+    </div>
+
+</div>

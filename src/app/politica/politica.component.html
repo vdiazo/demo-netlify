@@ -6,7 +6,7 @@
         <div *ngFor="let d of politicaDisplay" class="col-lg-3 mt-3 mb-3">
 
             <div class="box">
-                <img src="https://jellyfish-app-24xy9.ondigitalocean.app{{d.attributes.fotoPrincipal.data[0].attributes.formats.thumbnail.url}}" width="100%">
+                <img src="https://jellyfish-app-24xy9.ondigitalocean.app{{d.attributes.fotoPrincipal.data[0].attributes.url}}" width="100%">
                 <h5 class="mt-2 mb-2">{{ d.attributes.titulo }}</h5>
                 <a  routerLink="/noticias/{{ d.attributes.slug }}"
                     class="btn btn-dark btn-sm mt-2">
